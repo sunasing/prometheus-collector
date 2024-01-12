@@ -16,7 +16,7 @@ Once your cluster/subscription is enabled with preview, you can enable Managed P
 At the same time, the CRDs created for the OSS Prometheus will not be picked up by the managed Prometheus addon. This is intentional for the purposes of isolation of scrape jobs.
 
 ### Create a Pod or Service Monitor
-Use the [Pod and Service Monitor templates](https://github.com/Azure/prometheus-collector/tree/operator-targetallocator/otelcollector/customresources) and follow the API specification to create your custom resources. **Note** that if you are using existing pod/service monitors with Prometheus, you can simply change the API version to **azmonitoring.coreos.com/v1** for Managed Prometheus to start scraping metrics.
+Use the [Pod and Service Monitor templates](https://github.com/Azure/prometheus-collector/tree/main/otelcollector/customresources) and follow the API specification to create your custom resources. **Note** that if you are using existing pod/service monitors with Prometheus, you can simply change the API version to **azmonitoring.coreos.com/v1** for Managed Prometheus to start scraping metrics.
 Your pod and service monitors should look like the examples below:
 
 #### Example Service Monitor - 
